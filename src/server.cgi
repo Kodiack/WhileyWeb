@@ -3,7 +3,8 @@
 import sys
 import os
 
-os.chdir("/home/colton/Desktop/WhileyWeb")
+path = os.path.abspath(os.path.join(os.path.dirname(__file__),".."))
+os.chdir(path)
 # Set up the path.
 sys.path.insert(0, "lib")
 sys.path.insert(0, "src")
