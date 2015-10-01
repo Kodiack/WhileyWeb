@@ -5,7 +5,8 @@ import cgi
 import cgitb
 import sys
 
-HOME_DIR = r"/u/staff/djp/projects/WhileyWeb/"
+path = os.path.dirname(os.path.realpath(__file__))
+HOME_DIR = r + "\"" + path + "\""
 
 os.chdir(HOME_DIR)
 
